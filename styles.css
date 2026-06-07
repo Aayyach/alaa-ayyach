@@ -1,0 +1,17 @@
+:root {
+    --taupe: #9a9590;
+    --gray: #aaa7a5;
+}
+
+h1 {
+    text-align: center;
+}
+
+.folder {
+    color: var(--gray);
+}
+
+.folder:hover {
+    color: var(--taupe);
+    transition: 0.1s ease-in;
+}
