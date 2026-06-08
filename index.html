@@ -17,46 +17,125 @@
     <script defer src="index.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand bg-body">
-      <div class="container-fluid">
-        <div class="navbar-nav ms-auto gap-3">
-          <a
-            class="nav-link d-flex flex-column"
-            aria-label="navigation to about me section"
-            href="#about"
-            ><i class="folder bi bi-folder-fill fs-2 ps-1"></i
-            ><span class="small">about</span></a
-          >
-          <a
-            class="nav-link d-flex flex-column"
-            aria-label="navigation to previous work section"
-            href="#prev-work"
-            ><i class="folder bi bi-folder-fill fs-2 ps-4"></i
-            ><span class="small">previous work</span></a
-          >
-          <a
-            class="nav-link d-flex flex-column"
-            aria-label="navigation to projects section"
-            href="#projects"
-            ><i class="folder bi bi-folder-fill fs-2 ps-2"></i
-            ><span class="small">projects</span></a
-          >
-          <a
-            class="nav-link d-flex flex-column"
-            aria-label="navigation to contact me section"
-            href="#contact"
-            ><i class="folder bi bi-folder-fill fs-2 ps-2"></i
-            ><span class="small">contact</span></a
-          >
+    <header>
+      <nav class="navbar navbar-expand bg-body">
+        <div class="container-fluid">
+          <div class="navbar-nav ms-auto gap-3">
+            <a
+              class="nav-link d-flex flex-column"
+              aria-label="navigation to about me section"
+              href="#about"
+              ><i class="folder bi bi-folder-fill fs-2 ps-1"></i
+              ><span class="small">about</span></a
+            >
+            <a
+              class="nav-link d-flex flex-column"
+              aria-label="navigation to previous work section"
+              href="#prev-work"
+              ><i class="folder bi bi-folder-fill fs-2 ps-4"></i
+              ><span class="small">previous work</span></a
+            >
+            <a
+              class="nav-link d-flex flex-column"
+              aria-label="navigation to projects section"
+              href="#projects"
+              ><i class="folder bi bi-folder-fill fs-2 ps-2"></i
+              ><span class="small">projects</span></a
+            >
+            <a
+              class="nav-link d-flex flex-column"
+              aria-label="navigation to contact me section"
+              href="#contact"
+              ><i class="folder bi bi-folder-fill fs-2 ps-2"></i
+              ><span class="small">contact</span></a
+            >
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main>
       <h1>Hey, I'm Alaa.</h1>
-      <h2>About</h2>
-      <h2>Previous Work</h2>
-      <h2>Projects</h2>
-      <h2>Contact Me</h2>
+      <div class="d-flex flex-column justify-content-center">
+        <section id="about">
+          <div class="card text-bg-dark rounded-4 mx-5 my-3">
+            <div class="section-card card-body">
+              <div class="card-header d-flex">
+                <i class="close bi bi-circle-fill px-1"></i
+                ><i class="minimize bi bi-circle-fill px-1"></i
+                ><i class="expand bi bi-circle-fill px-1"></i>
+                <i class="open-folder bi bi-folder2-open"></i
+                ><span class="small px-1 fs-6">about</span>
+              </div>
+              <h2 class="card-title px-3 py-2">About Me</h2>
+              <div class="content">
+                <img
+                  class="portfolio-pic"
+                  src="https://placehold.co/350x550"
+                  alt="professional photo of me"
+                  height="550"
+                  width="350"
+                />
+                <p class="about-text card-text px-5 fs-4">
+                  I'm a Computer Science student at Portland State University in
+                  my junior year, and I'm passionate about building software
+                  that makes a meaningful impact on its users. My interests are
+                  full-stack web development and AI, where I've been building
+                  projects and taking courses to expand my knowledge on both
+                  topics.<br /><br />I'm also interested in UI/UX design and
+                  art, which I love incorporating into my personal and academic
+                  projects. I currently work in retail, where I've gained strong
+                  communication, customer service, and problem solving skills.
+                  I'm seeking opportunities to gain experience in the tech
+                  industry, and I'm highly motivated and determined to keep
+                  expanding my knowledge in tech as I continue my academic and
+                  professional growth.<br /><br />Navigate to my experience and
+                  projects below to learn more about my interests and work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="prev-work">
+          <div class="card text-bg-dark rounded-4 mx-5 my-3">
+            <div class="section-card card-body">
+              <div class="card-header d-flex">
+                <i class="close bi bi-circle-fill px-1"></i
+                ><i class="minimize bi bi-circle-fill px-1"></i
+                ><i class="expand bi bi-circle-fill px-1"></i>
+                <i class="open-folder bi bi-folder2-open"></i
+                ><span class="small px-1 fs-6">previous work</span>
+              </div>
+              <h2 class="card-title px-3 py-2">Professional Experience</h2>
+              <p class="card-text px-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi,
+                eligendi laudantium voluptate officiis quae aut architecto
+                officia voluptatem neque nihil totam placeat repellendus labore
+                esse optio laboriosam quod reprehenderit quibusdam!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div class="card text-bg-dark rounded-4 mx-5 my-3">
+            <div class="section-card card-body">
+              <div class="card-header d-flex">
+                <i class="close bi bi-circle-fill px-1"></i
+                ><i class="minimize bi bi-circle-fill px-1"></i
+                ><i class="expand bi bi-circle-fill px-1"></i>
+                <i class="open-folder bi bi-folder2-open"></i
+                ><span class="small px-1 fs-6">projects</span>
+              </div>
+              <h2 class="card-title px-3 py-2">Projects</h2>
+              <p class="card-text px-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi,
+                eligendi laudantium voluptate officiis quae aut architecto
+                officia voluptatem neque nihil totam placeat repellendus labore
+                esse optio laboriosam quod reprehenderit quibusdam!
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
