@@ -20,44 +20,47 @@
     <header>
       <nav class="navbar navbar-expand bg-body">
         <div class="container-fluid">
-          <a class="navbar-brand" aria-label="Path to this website" href="#home"
-            >alaa/desktop/portfolio/</a
+          <h1
+            class="brand-name navbar-brand"
+            aria-label="Path to this website"
+            href="#"
           >
+            alaa/desktop/portfolio/
+          </h1>
           <div class="navbar-nav ms-auto gap-3">
             <a
               class="nav-link d-flex flex-column"
               aria-label="navigation to about me section"
               href="#about"
-              ><i class="folder bi bi-folder-fill fs-2 ps-1"></i
-              ><span class="small">about</span></a
+              ><i class="folder bi bi-folder-fill ps-1"></i
+              ><span class="folder-text">about</span></a
             >
             <a
               class="nav-link d-flex flex-column"
-              aria-label="navigation to previous work section"
+              aria-label="navigation to experience section"
               href="#prev-work"
-              ><i class="folder bi bi-folder-fill fs-2 ps-4"></i
-              ><span class="small">previous work</span></a
+              ><i class="folder bi bi-folder-fill ps-3"></i
+              ><span class="folder-text">experience</span></a
             >
             <a
               class="nav-link d-flex flex-column"
               aria-label="navigation to projects section"
               href="#projects"
-              ><i class="folder bi bi-folder-fill fs-2 ps-2"></i
-              ><span class="small">projects</span></a
+              ><i class="folder bi bi-folder-fill ps-2"></i
+              ><span class="folder-text">projects</span></a
             >
             <a
               class="nav-link d-flex flex-column"
               aria-label="navigation to contact me section"
               href="#contact"
-              ><i class="folder bi bi-folder-fill fs-2 ps-2"></i
-              ><span class="small">contact</span></a
+              ><i class="folder bi bi-folder-fill ps-2"></i
+              ><span class="folder-text">contact</span></a
             >
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <h1>Hey, I'm Alaa.</h1>
       <div class="d-flex flex-column justify-content-center">
         <section id="about">
           <div class="card text-bg-dark rounded-4 mx-5 my-3">
@@ -106,7 +109,7 @@
                 ><i class="minimize bi bi-circle-fill px-1"></i
                 ><i class="expand bi bi-circle-fill px-1"></i>
                 <i class="open-folder bi bi-folder2-open"></i
-                ><span class="small px-1 fs-6">previous work</span>
+                ><span class="small px-1 fs-6">experience</span>
               </div>
               <h2 class="card-title px-3 py-2">Professional Experience</h2>
               <div class="prev-work-text card-text px-3">
@@ -160,12 +163,119 @@
                 ><span class="small px-1 fs-6">projects</span>
               </div>
               <h2 class="card-title px-3 py-2">Projects</h2>
-              <p class="card-text px-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi,
-                eligendi laudantium voluptate officiis quae aut architecto
-                officia voluptatem neque nihil totam placeat repellendus labore
-                esse optio laboriosam quod reprehenderit quibusdam!
-              </p>
+              <div class="accordion mx-3" id="dessertMarketplace">
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button fs-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Dessert Marketplace
+                    </button>
+                  </h3>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#dessertMarketplace"
+                  >
+                    <div class="accordion-body">
+                      <div class="projects-text fs-5">
+                        <h4>
+                          <strong>Dessert Marketplace</strong> | Python, PyTest,
+                          OOP, Data Structures<br />
+                        </h4>
+                        <ul>
+                          <li>
+                            Designed a detailed specification and CLI
+                            application using object-oriented design across
+                            three shop types, improving code scalability and
+                            maintainability.
+                          </li>
+                          <li>
+                            Implemented a custom binary search tree for cart
+                            management, enabling O(log n) insertion and
+                            retrieval in the average case through recursive
+                            logic.
+                          </li>
+                          <li>
+                            Developed a comprehensive white box PyTest test
+                            suite for the application’s core hierarchy to verify
+                            inheritance behavior and logic.
+                          </li>
+                          <li>
+                            Utilized input validation and exception handling,
+                            reducing runtime errors during testing and ensuring
+                            smooth end-to-end user flows when interacting with
+                            the CLI.
+                          </li>
+                        </ul>
+                        <a
+                          href="https://github.com/Aayyach/Dessert-Marketplace"
+                          class="mx-2 my-2 btn btn-light"
+                          >GitHub Link</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fs-4"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Khalasta
+                    </button>
+                  </h3>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="projects-text fs-5">
+                        <h4>
+                          <strong>Khalasta</strong> | JavaScript, MongoDB,
+                          Express, NodeJS, React, APIs<br />
+                        </h4>
+                        <ul>
+                          <li>
+                            Building a full-stack task planning application that
+                            uses CRUD to allow users to plan out tasks that need
+                            to be completed in the week.
+                          </li>
+                          <li>
+                            Developing support for manual task entry and
+                            removal, letting users plan and check off tasks as
+                            completed or pending, and archiving them for future
+                            reference.
+                          </li>
+                          <li>
+                            Designing possible support for a notes section that
+                            enables users to take notes while in lecture or
+                            upload existing PDFs and link them to specific
+                            task(s) on their list to refer back to using S3
+                            object storage.
+                          </li>
+                        </ul>
+                        <a
+                          href="https://github.com/Aayyach/khalasta"
+                          class="mx-2 my-2 btn btn-light"
+                          >GitHub Link</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -66,8 +66,32 @@ h1 {
   margin-left: auto;
 }
 
+/* Accordion */
+.accordion-button {
+  --bs-accordion-btn-bg: #212529;
+  --bs-accordion-btn-color: #ffffff;
+}
+
+.accordion-body {
+  background-color: #212529;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.projects-text {
+  color: #ffffff;
+}
+
 /* Media queries for responsive design */
 @media (min-width: 0px) {
+  .folder {
+    font-size: x-large;
+  }
+  .folder-text {
+    font-size: x-small;
+  }
   .content {
     display: flex;
     flex-direction: column;
@@ -81,12 +105,19 @@ h1 {
     margin-bottom: -40px;
   }
   .about-text,
-  .prev-work-text {
+  .prev-work-text,
+  .projects-text {
     font-size: medium;
   }
 }
 
 @media (min-width: 1200px) {
+  .folder {
+    font-size: xx-large;
+  }
+  .folder-text {
+    font-size: small;
+  }
   .content {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -96,7 +127,8 @@ h1 {
     width: 350px;
   }
   .about-text,
-  .prev-work-text {
+  .prev-work-text,
+  .projects-text {
     font-size: x-large;
   }
 }
