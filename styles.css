@@ -1,6 +1,6 @@
 :root {
-  --taupe: #9a9590;
-  --gray: #aaa7a5;
+  --aqua-hover: #519dd3;
+  --aqua: #5fade5;
   --close-button-color: #ff605c;
   --close-button-hover: #e34a47;
   --minimize-button-color: #ffbd44;
@@ -16,18 +16,18 @@ h1 {
 
 /* Navigation bar */
 .folder {
-  color: var(--gray);
+  color: var(--aqua);
 }
 
 .folder:hover {
-  color: var(--taupe);
+  color: var(--aqua-hover);
   transition: 0.1s ease-in;
 }
 
 /* Terminal-inspired cards */
 .section-card {
   height: auto;
-  padding-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .portfolio-pic {
@@ -68,10 +68,6 @@ h1 {
 
 /* Media queries for responsive design */
 @media (min-width: 0px) {
-  .section-card {
-    height: auto;
-    margin-bottom: 15px;
-  }
   .content {
     display: flex;
     flex-direction: column;
@@ -84,7 +80,8 @@ h1 {
     margin-top: -60px;
     margin-bottom: -40px;
   }
-  .about-text {
+  .about-text,
+  .prev-work-text {
     font-size: medium;
   }
 }
@@ -98,7 +95,8 @@ h1 {
     height: 550px;
     width: 350px;
   }
-  .about-text {
+  .about-text,
+  .prev-work-text {
     font-size: x-large;
   }
 }
