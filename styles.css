@@ -94,6 +94,13 @@
   color: var(--white);
 }
 
+/* Footer */
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
 /* Media queries for responsive design */
 @media (min-width: 0px) {
   .folder {
@@ -119,6 +126,9 @@
   .projects-text {
     font-size: medium;
   }
+  .nav-footer {
+    font-size: small;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -141,5 +151,8 @@
   .prev-work-text,
   .projects-text {
     font-size: x-large;
+  }
+  .nav-footer {
+    font-size: medium;
   }
 }
