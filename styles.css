@@ -1,6 +1,8 @@
 :root {
   --aqua-hover: #519dd3;
   --aqua: #5fade5;
+  --white: #ffffff;
+  --terminal-card-color: #212529;
   --close-button-color: #ff605c;
   --close-button-hover: #e34a47;
   --minimize-button-color: #ffbd44;
@@ -9,9 +11,17 @@
   --expand-button-hover: #03b447;
 }
 
-h1 {
-  text-align: center;
-  padding: 0 0 1.25rem 0;
+/* Loading screen */
+#loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: var(--white);
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 500ms ease-out;
 }
 
 /* Navigation bar */
@@ -68,12 +78,12 @@ h1 {
 
 /* Accordion */
 .accordion-button {
-  --bs-accordion-btn-bg: #212529;
-  --bs-accordion-btn-color: #ffffff;
+  --bs-accordion-btn-bg: var(--terminal-card-color);
+  --bs-accordion-btn-color: var(--white);
 }
 
 .accordion-body {
-  background-color: #212529;
+  background-color: var(--terminal-card-color);
 }
 
 .accordion-button:after {
@@ -81,7 +91,7 @@ h1 {
 }
 
 .projects-text {
-  color: #ffffff;
+  color: var(--white);
 }
 
 /* Media queries for responsive design */
@@ -98,11 +108,11 @@ h1 {
     align-items: center;
   }
   .portfolio-pic {
-    clip-path: circle(30%);
+    clip-path: circle(40%);
     height: 300px;
     width: 300px;
-    margin-top: -60px;
-    margin-bottom: -40px;
+    margin-top: -30px;
+    object-fit: scale-down;
   }
   .about-text,
   .prev-work-text,
@@ -123,8 +133,9 @@ h1 {
     grid-template-columns: 1fr 3fr;
   }
   .portfolio-pic {
-    height: 550px;
+    height: 450px;
     width: 350px;
+    object-fit: contain;
   }
   .about-text,
   .prev-work-text,
